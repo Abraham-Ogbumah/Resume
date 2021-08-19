@@ -59,10 +59,8 @@ nav li a:hover {
     font-size: 4rem;
 }
 
-.favImage {}
-
 .introduction {
-    width: 720px;
+    width: 60%;
 }
 
 .profileSummary h3 {
@@ -84,6 +82,8 @@ nav li a:hover {
     width: 300px;
     background-color: beige;
     color: black;
+    margin-right: 20px;
+    margin-bottom: 5px;
 }
 
 .jobDescription {
@@ -98,6 +98,8 @@ nav li a:hover {
 .card {
     width: 300px;
     height: 300px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .card img {
@@ -246,4 +248,90 @@ nav li a:hover {
     font-size: 18px;
 }
 
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+    nav li {
+        margin: 5px;
+    }
+    nav li a {
+        padding: 16px;
+    }
+    #aboutMe {
+        height: 633px;
+    }
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .order {
+        flex-direction: column-reverse;
+    }
+    .profileSummary {
+        display: none;
+    }
+    .name {
+        font-size: 2.5rem;
+    }
+    .introduction {
+        width: 60%;
+        height: 112px;
+        text-align: center;
+    }
+    .profileSummary h3 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .profileSummary p {
+        line-height: 1.6;
+        background-color: black;
+        color: white;
+    }
+    .name {
+        font-size: 3.5rem;
+    }
+    .employer {
+        width: 100%;
+        background-color: beige;
+        color: black;
+        margin: 5px 20px;
+        padding: 5px;
+    }
+    .employer h3 {
+        font-size: 0.9rem;
+        margin-top: 2.5px;
+    }
+    .card {
+        height: 270px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    .edu-sec {
+        height: 685px;
+    }
+    .passtime ul {
+        list-style: none;
+    }
+    #education {
+        background-color: beige;
+    }
+    #aboutMe {
+        margin-bottom: 20px;
+    }
+    #getInTouch {
+        padding: 30px 20px;
+    }
+    #getInTouch .contact {
+        max-width: 800px;
+        text-align: center;
+    }
+    #getInTouch .contact h3 {
+        font-size: 2.2rem;
+        color: #000;
+    }
+    .container .contactInfo {
+        width: 45%;
+    }
+    .contactForm {
+        width: 45%;
+    }
+}
