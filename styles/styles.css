@@ -298,7 +298,7 @@ footer {
         display: none;
     }
     .name {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
     .introduction {
         width: 60%;
@@ -361,5 +361,49 @@ footer {
     }
     .contactForm {
         width: 45%;
+    }
+}
+
+@media (min-width:320px) and (max-width:414px) {
+    nav li a {
+        display: none;
+    }
+    .professionalImage img {
+        width: 300px;
+        height: 300px;
+    }
+    .name {
+        font-size: 2.5rem;
+    }
+    #aboutMe {
+        height: 475px;
+    }
+    .section-title {
+        padding-top: 5px;
+        font-size: 2rem;
+    }
+    .jobDescription {
+        width: 100%;
+        margin: 0 10px;
+        padding: 0 21px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container .contactInfo {
+        width: 100%;
+    }
+    .contactForm {
+        width: 100%;
+    }
+    footer {
+        height: 130px;
+    }
+    .footer-image img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+    .footer-text p {
+        font-size: 12px;
     }
 }
