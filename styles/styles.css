@@ -4,36 +4,78 @@
     padding: 0;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    margin: 20px;
-}
-
-nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-
-nav li a:hover {
-    background-color: #111111;
+body {
+    font-family: montserrat;
 }
 
 #aboutMe {
     width: 100%;
     height: 600px;
     background: url("../img/top-section-image2.jpg") no-repeat center center;
+    margin-bottom: 20px;
+}
+
+.top-section {
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+}
+
+.logoImage {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: ;
+    color: #000;
+}
+
+.brand-title {}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #fff;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 10px;
 }
 
 .profile {
@@ -78,6 +120,11 @@ nav li a:hover {
     font-size: 3.5rem;
 }
 
+.workHeader {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .employer {
     width: 300px;
     background-color: beige;
@@ -104,7 +151,7 @@ nav li a:hover {
 
 .card img {
     max-width: 100%;
-    max-height: 250pc;
+    max-height: 250px;
 }
 
 .section-title {
@@ -117,10 +164,6 @@ nav li a:hover {
 
 #education {
     background-color: beige;
-}
-
-#aboutMe {
-    margin-bottom: 20px;
 }
 
 .jobDescription ul {
@@ -145,6 +188,15 @@ nav li a:hover {
 #getInTouch .contact h3 {
     font-size: 2.2rem;
     color: #000;
+}
+
+.passtime ul {
+    list-style: none;
+}
+
+.passtime h3 {
+    margin-bottom: 10px;
+    ;
 }
 
 .container {
@@ -276,6 +328,159 @@ footer {
     color: yellowgreen;
 }
 
+@media (min-width:320px) and (max-width:414px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+        background-color: beige;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links ul li {
+        text-align: center;
+    }
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    .professionalImage {
+        width: 150px;
+        height: 150px;
+    }
+    .professionalImage img {
+        width: 150px;
+        height: 150px;
+    }
+    .name {
+        font-size: 1.2rem;
+    }
+    .margin-reset {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .introduction {
+        width: 100%;
+        text-align: center;
+        height: 100%;
+    }
+    .profileSummary h3 {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    .profileSummary p {
+        font-size: 0.7rem;
+        line-height: 1.6;
+        background-color: black;
+        color: white;
+    }
+    .order {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    #aboutMe {
+        height: 435px;
+        margin-bottom: 10px;
+    }
+    .workHeader {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #workExperience {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .employer h2 {
+        font-size: 18px;
+    }
+    .employer h3 {
+        font-size: 12px;
+    }
+    .section-title {
+        padding-top: 5px;
+        font-size: 1.5rem;
+    }
+    .experience {
+        width: 80%;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .jobDescription {
+        width: 100%;
+        margin: 0 10px;
+        padding: 0 21px;
+    }
+    .jobDescription ul {
+        line-height: 1.2;
+        font-size: 1rem;
+    }
+    .jobDescription ul li {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .edu-sec {
+        width: 80%;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-items: center;
+        text-align: center;
+    }
+    .card {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 50px;
+    }
+    .card img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    #getInTouch {
+        padding: 30px 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #getInTouch .contact {
+        max-width: 800px;
+        text-align: center;
+    }
+    #getInTouch .contact h3 {
+        font-size: 2.2rem;
+        color: #000;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container .contactInfo {
+        width: 100%;
+    }
+    .contactForm {
+        width: 100%;
+    }
+    footer {
+        height: 120px;
+    }
+    .footer-image img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+    .footer-text p {
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 991px) {
     nav li {
         margin: 5px;
@@ -284,7 +489,7 @@ footer {
         padding: 16px;
     }
     #aboutMe {
-        height: 633px;
+        height: 845px;
     }
     .profile {
         flex-direction: column;
@@ -292,10 +497,11 @@ footer {
         width: 90%;
     }
     .order {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        width: 100%;
     }
     .profileSummary {
-        display: none;
+        display: ;
     }
     .name {
         font-size: 3.5rem;
@@ -336,9 +542,6 @@ footer {
     .edu-sec {
         height: 685px;
     }
-    .passtime ul {
-        list-style: none;
-    }
     #education {
         background-color: beige;
     }
@@ -364,46 +567,4 @@ footer {
     }
 }
 
-@media (min-width:320px) and (max-width:414px) {
-    nav li a {
-        display: none;
-    }
-    .professionalImage img {
-        width: 300px;
-        height: 300px;
-    }
-    .name {
-        font-size: 2.5rem;
-    }
-    #aboutMe {
-        height: 475px;
-    }
-    .section-title {
-        padding-top: 5px;
-        font-size: 2rem;
-    }
-    .jobDescription {
-        width: 100%;
-        margin: 0 10px;
-        padding: 0 21px;
-    }
-    .container {
-        flex-direction: column;
-    }
-    .container .contactInfo {
-        width: 100%;
-    }
-    .contactForm {
-        width: 100%;
-    }
-    footer {
-        height: 120px;
-    }
-    .footer-image img {
-        max-width: 80px;
-        max-height: 80px;
-    }
-    .footer-text p {
-        font-size: 12px;
-    }
-}
+*/

@@ -15,15 +15,30 @@
 <body>
 
     <section id="aboutMe">
-        <nav>
-            <ul>
-                <li><a href="#aboutMe">About Me</a></li>
-                <li><a href="#workExperience">Work Experience</a></li>
-                <li><a href="#education">Education and Others</a></li>
-                <li><a href="#getInTouch">Get In Touch</a></li>
-            </ul>
-        </nav>
+        <div class="top-section">
+            <nav class="navbar">
+                <div class="brand-title">
+                    <a href="#"><img src="./img/abraham.png" alt="logo" class="logoImage"></a>
+                </div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="#aboutMe">About Me</a></li>
+                        <li><a href="#workExperience">Work Experience</a></li>
+                        <li><a href="#education">Education and Others</a></li>
+                        <li><a href="#getInTouch">Get In Touch</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <div class="profile order">
+            <div class="professionalImage">
+                <img src="./img/abraham.png" alt="Abraham Ogbumah" class="favImage div-resize">
+            </div>
             <div class="introduction div-resize">
                 <div class="basic-info margin-reset">
                     <h1 class="name">Abraham Ogbumah</h1>
@@ -34,18 +49,15 @@
                     <p>A decision analyst with over 4 years’ professional experience using data to lead and drive business process improvement; working across business functions to provide consultative support in financial operations, planning and analysis
                         while making quick and strategic recommendations to management. Highly skilled in automating processes and project management. Uses business tools such as advanced Microsoft Excel, Tableau, Power BI, QlikSense, SQL.</p>
                 </div>
-
-            </div>
-
-            <div class="professionalImage">
-                <img src="./img/abraham.png" alt="Abraham Ogbumah" class="favImage div-resize">
             </div>
         </div>
-
     </section>
 
+
     <section id="workExperience">
-        <h1 class="section-title">Work Experience</h1>
+        <div class="workHeader">
+            <h1 class="section-title">Work Experience</h1>
+        </div>
         <div class="experience profile">
             <div class="employer">
                 <h2>PwC Nigeria</h2>
@@ -102,8 +114,11 @@
 
     </section>
 
+
     <section id="education">
-        <h1 class="section-title">Education and Others</h1>
+        <div class="workHeader">
+            <h1 class="section-title">Education and Others</h1>
+        </div>
         <div class="edu-sec profile">
             <div class="education card">
                 <img src="./img/education.jpg" alt="education">
@@ -195,7 +210,7 @@
 
     </footer>
 
-    <script src="" async defer></script>
+    <script src="./js/app.js" async defer></script>
 </body>
 
 </html>
