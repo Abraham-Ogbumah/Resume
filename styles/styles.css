@@ -489,7 +489,7 @@ footer {
         padding: 16px;
     }
     #aboutMe {
-        height: 845px;
+        height: 670px;
     }
     .profile {
         flex-direction: column;
@@ -559,12 +559,10 @@ footer {
         font-size: 2.2rem;
         color: #000;
     }
-    .container .contactInfo {
+    /* .container .contactInfo {
         width: 45%;
-    }
-    .contactForm {
+    } */
+    /* .contactForm {
         width: 45%;
-    }
+    } */
 }
-
-*/
